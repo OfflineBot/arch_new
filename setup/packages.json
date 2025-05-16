@@ -8,6 +8,8 @@
   "fish",
   "fisher",
   "gcc",
+  "git",
+  "github-cli",
   "go",
   "hyprland",
   "hyprlock",
@@ -20,6 +22,7 @@
   "ntfs-3g",
   "otf-fira-code-symbol",
   "otf-font-awesome",
+  "pipewire",
   "rust",
   "rust-analyzer",
   "steam",
@@ -35,6 +38,7 @@
   "texlive-plaingeneric",
   "ttf-font-awesome",
   "vim",
+  "wireplumber",
   "wlogout",
   "xdg-desktop-portal-hyprland"
 ]
