@@ -1,0 +1,8 @@
+{
+    "/etc/fstab": [
+        {
+            "/mnt/games": "UUID=E0AA60B1AA60863E   /mnt/games   ntfs-3g   uid=1000,gid=1000,umask=0000   0   0",
+            "/mnt/win11": "UUID=DCA4A73FA4A71AD2   /mnt/win11   ntfs-3g   uid=1000,gid=1000,umask=0000,windows_names   0   0"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
+//$theme_fg_color: "@theme_fg_color";
+//$theme_bg_color: "@theme_bg_color";
+$bg1: #070707;
+$bg2: #161719;
+$border: #777777;
+$red: #e69ea8;
+$cyan: #aea7d6;
+$pink: #fbc2e8;
+$yellow: #f8dfa4;
+$purple: #34cdf3;
+$dark_purple: #969cff;
+
+
+button {
+    background-image: none;
+}
+
+window.Bar {
+    background: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    /*border-radius: 5px;*/
+
+    >centerbox {
+        background: #{$bg1};
+        /*border-radius: 5px;*/
+        /*margin: 5px;*/
+        border-bottom: 1px solid #{$border};
+        margin-bottom: 0px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+.bar-item {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.bar-date {
+    color: #{$dark_purple};
+}
+
+.bar-time {
+    color: #{$purple};
+}
+
+.bar-battery {
+  color: #{$yellow};
+}
+
+.bar-off {
+    border: none;
+}
+.bar-off-text {
+    color: #{$red};
+    border: none;
+}
+
+.wk-item {
+    font-size: 12px;
+    padding: 0 4px 0 4px;
+    margin: 0;
+}
+.wk-btn {
+    font-size: 11px;
+    border: 1px solid #{$border};
+    padding: 0;
+    border-radius: 4px;
+    margin: 5px 2px 5px 2px;
+}
+
+.wk-active {
+    border-color: #{$cyan};
+    color: #{$cyan};
+}
+
+.wk-active-window {
+    color: #{$border};
+}
+
+.btn-box {
+    margin: 20px;
+    background-color: #{$bg1};
+    padding: 70px;
+    border: 1px solid #{$border};
+    border-radius: 10px;
+}
+
+.btn-box:hover {
+    background-color: #{$bg2};
+    border: 1px solid #cccccc;
+    transition: 0.3s;
+}
+
+.stats-main-box {
+    background-color: #{$bg1};
+    padding: 10px;
+    border: 1px solid #{$border};
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.stats-box-item {
+    min-width: 150px;
+}
+.stat-name {
+    min-width: 100px;
+}
+.stat.value {
+    min-width: 50px;
+}
+
+.stat-GPU { color: #{$red}; }
+.stat-RAM { color: #{$pink}; }
+.stat-CPU { color: #{$cyan}; }
+.stat-DISK { color: #{$yellow}; }
+.stat-SOUND { color: #{$purple}; }
+
+.Applauncher3 {
+    background-color: #000;
+}
+
