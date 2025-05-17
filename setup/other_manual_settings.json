@@ -1,11 +1,12 @@
 {
-    "/etc/fstab": [
-        {
-            "mkdir -p <folder>": "Link Drive there",
-            "/mnt/games": "UUID=E0AA60B1AA60863E   /mnt/games   ntfs-3g   uid=1000,gid=1000,umask=0000   0   0",
-            "/mnt/win11": "UUID=DCA4A73FA4A71AD2   /mnt/win11   ntfs-3g   uid=1000,gid=1000,umask=0000,windows_names   0   0"
-        }
-    ],
-    "/usr/share/sddm/themes": "put ../sddm/<sugar-candy> folder there",
-    "/etc/sddm.conf": "Add: [Theme]\nCurrent=sugar-candy"
+    "/etc/fstab": {
+        "mkdir -p <folder>": "Link Drive there",
+        "/mnt/games": "UUID=E0AA60B1AA60863E   /mnt/games   ntfs-3g   uid=1000,gid=1000,umask=0000   0   0",
+        "/mnt/win11": "UUID=DCA4A73FA4A71AD2   /mnt/win11   ntfs-3g   uid=1000,gid=1000,umask=0000,windows_names   0   0"
+    },
+    "sddm": {
+        "/usr/share/sddm/themes": "put ../sddm/<sugar-candy> folder there",
+        "/etc/sddm.conf": "Add: [Theme]\nCurrent=sugar-candy",
+        "/usr/share/sddm/scripts/Xsetup": "add: xrandr --output DP-0 --mode 1920x1080 --rate 144.00 --primary \nxrandr --output DP-3 --off \nxrandr --output HDMI-0 --off"
+    }
 }
