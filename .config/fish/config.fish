@@ -25,5 +25,5 @@ function fish_prompt
 	if test $last_status -ne 0
 		set stat (set_color red)"[$last_status]" (set_color normal)
 	end
-	string join '' -- (set_color blue) (prompt_pwd) $stat '> ' (set_color normal)
+	string join '' -- (set_color blue) (prompt_pwd) $stat ' > ' (set_color normal)
 end
