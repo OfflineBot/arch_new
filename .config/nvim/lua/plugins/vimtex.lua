@@ -4,7 +4,7 @@ return {
     init = function()
         vim.g.vimtex_view_method = "zathura"
 
-        vim.g.maplocalleader = ","
+        --vim.g.maplocalleader = ","
         vim.g.tex_flavor = 'latex'
         vim.g.tex_complete = 'tex'
         vim.g.vimtex_view_general_viewer = 'zathura'
