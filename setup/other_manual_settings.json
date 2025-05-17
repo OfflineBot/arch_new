@@ -6,6 +6,6 @@
             "/mnt/win11": "UUID=DCA4A73FA4A71AD2   /mnt/win11   ntfs-3g   uid=1000,gid=1000,umask=0000,windows_names   0   0"
         }
     ],
-    "/usr/share/sddm/themes": "put ../sddm/<sddm-sugar-candy> folder there",
-    "/etc/sddm.conf": "Add: [Theme]\nCurrent=sddm-sugar-candy"
+    "/usr/share/sddm/themes": "put ../sddm/<sugar-candy> folder there",
+    "/etc/sddm.conf": "Add: [Theme]\nCurrent=sugar-candy"
 }
