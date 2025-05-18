@@ -37,3 +37,5 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
 vim.wo.relativenumber = true
 
+-- Make terminal mode functional
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
