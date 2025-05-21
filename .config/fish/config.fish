@@ -27,3 +27,5 @@ function fish_prompt
 	end
     string join '' -- (set_color --bold white) (prompt_pwd) $stat ' > ' (set_color normal)
 end
+
+fish_add_path /home/offlinebot/.spicetify
