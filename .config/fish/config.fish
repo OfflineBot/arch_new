@@ -8,6 +8,8 @@
 
 set -Ux TERMINAL alacritty
 set -x GOPROXY direct
+set -Ux fish_user_paths $HOME/.nix-profile/bin $fish_user_paths
+set -ga fish_user_paths /home/offlinebot/.nimble/bin
 
 function cff
     clear
@@ -29,3 +31,5 @@ function fish_prompt
 end
 
 fish_add_path /home/offlinebot/.spicetify
+
+fish_add_path /home/offlinebot/.modular/bin

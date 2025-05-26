@@ -1,10 +1,11 @@
-import { App, Gdk } from "astal/gtk3"
+import { App, Gdk, Widget } from "astal/gtk3"
 import style from "./style.scss"
 
 import Bar from "./modules/bar/bar"
 import Logout from "./modules/logout/logout"
 import Stats from "./modules/stats/stats"
 import Applauncher from "./modules/applauncher/applauncher"
+import MprisPlayers from "./modules/media_player/media_player"
 
 
 App.start({
@@ -22,6 +23,7 @@ App.start({
         Bar(0)
         Bar(1)
         Bar(2)
+        MprisPlayers(0)
     },
 })
 

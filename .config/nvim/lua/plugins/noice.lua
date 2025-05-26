@@ -11,7 +11,7 @@ return {
         vim.api.nvim_set_hl(0, "MyBorderHighlight", { fg = "#aea7d6", bg = "NONE" })
         require('noice').setup({
          notify = {
-              enabled = true,
+              enabled = false,
               view = "notify",
             },
             messages = {
