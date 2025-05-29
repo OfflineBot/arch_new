@@ -12,6 +12,8 @@ configuration {
     sort: true;
     icon-theme: "Papirus";
     show-icons: true;
+    font: "Fira Code 12";
+    fixed-num-lines: false;
 }
 
 * {
@@ -34,7 +36,7 @@ configuration {
     lightfg:                        #586875;
     selected-normal-background:     #272727;
     border-color:                   #7c8389;
-    spacing:                        2;
+    spacing:                        4;
     separatorcolor:                 #aea7d677;
     urgent-background:              #1d1f212c;
     selected-urgent-background:     #a54242;
@@ -52,6 +54,7 @@ window {
     border:           1;
     border-radius: 5;
     padding:          5;
+    width: 500px;
 }
 mainbox {
     border:  0;
