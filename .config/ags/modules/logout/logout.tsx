@@ -1,4 +1,4 @@
-import { App, Astal, Gtk, Gdk, Widget } from "astal/gtk3"
+import { App, Astal, Gdk, Widget } from "astal/gtk3"
 
 const USER_PATH = "/home/offlinebot"
 
@@ -18,14 +18,13 @@ const btn = (name: string, command: string, relative_icon_path: string) => {
 }
 
 
-export default function Logout(gdkmonitor: number) {
+export default function Logout() {
     return <window
-        name={`logout-${gdkmonitor}`}
+        name={`logout`}
         visible={false}
         className="Logout"
         exclusivity={Astal.Exclusivity.IGNORE}
         keymode={Astal.Keymode.ON_DEMAND} 
-        monitor={gdkmonitor}
         onKeyPressEvent={(self, event: Gdk.Event) => {
             if (event.get_keyval()[1] === Gdk.KEY_Escape)
                 self.hide()

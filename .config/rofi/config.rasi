@@ -20,7 +20,7 @@ configuration {
     selected-normal-foreground:     #f9f9f9;
     foreground:                     #d7d7d7;
     normal-foreground:              @foreground;
-    alternate-normal-background:    #070707;
+    alternate-normal-background:    #0a0c0f;
     red:                            #dc322f;
     selected-urgent-foreground:     #f9f9f9;
     blue:                           #268bd2;
@@ -29,23 +29,23 @@ configuration {
     active-foreground:              #65acff;
     lightbg:                        #eee8d5;
     selected-active-foreground:     #f9f9f9;
-    alternate-active-background:    #4b5160e3;
-    background:                     #070707F2;
+    alternate-active-background:    #4b5160;
+    background:                     #0a0c0f;
     alternate-normal-foreground:    @foreground;
     normal-background:              @background;
     lightfg:                        #586875;
-    selected-normal-background:     #272727;
-    border-color:                   #7c8389;
+    selected-normal-background:     #222428;
+    border-color:                   #777777;
     spacing:                        4;
-    separatorcolor:                 #aea7d677;
-    urgent-background:              #1d1f212c;
+    separatorcolor:                 #777777;
+    urgent-background:              #1d1f21;
     selected-urgent-background:     #a54242;
     alternate-urgent-foreground:    @urgent-foreground;
     background-color:               #00000000;
     alternate-active-foreground:    @active-foreground;
-    active-background:              #1d1f212c;
+    active-background:              #1d1f21;
     selected-active-background:     #4491ed;
-    theme-border: #aea7d6;
+    theme-border: #777777;
 }
 
 window {

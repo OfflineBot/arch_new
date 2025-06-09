@@ -1,10 +1,11 @@
 // https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
 //$theme_fg_color: "@theme_fg_color";
 //$theme_bg_color: "@theme_bg_color";
-$bg1: #070707;
+$bg1: #0a0c0f;
 $bg2: #161719;
 $fg: #ccc;
 $border: #777777;
+$border2: #777777;
 $red: #e69ea8;
 $cyan: #aea7d6;
 $pink: #fbc2e8;
@@ -12,12 +13,13 @@ $yellow: #f8dfa4;
 $purple: #34cdf3;
 $dark_purple: #969cff;
 
-
 button {
     background-image: none;
 }
 
 window.Bar {
+    min-width: 200px;
+    min-height: 200px;
     background: transparent;
     color: #ffffff;
     font-weight: bold;
@@ -25,13 +27,10 @@ window.Bar {
 
     >centerbox {
         background: #{$bg1};
-        /*border-radius: 5px;*/
-        /*margin: 5px;*/
-        border-bottom: 1px solid #{$border};
+        border-radius: 8px;
+        margin: 8px;
         margin-bottom: 0px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
+        border: 1px solid #{$border2};
     }
 }
 
@@ -46,7 +45,7 @@ window.Bar {
 }
 
 .bar-time {
-    color: #{$purple};
+    color: #{$fg};
 }
 
 .bar-battery {
@@ -55,6 +54,7 @@ window.Bar {
 
 .bar-off {
     border: none;
+    background-color: #{$bg1};
 }
 .bar-off-text {
     color: #{$red};
@@ -65,22 +65,26 @@ window.Bar {
     font-size: 12px;
     padding: 0 4px 0 4px;
     margin: 0;
+    background-color: #{$bg1};
 }
 .wk-btn {
     font-size: 11px;
-    border: 1px solid #{$border};
-    padding: 0;
+    border: 1px solid #{$border2};
+    background-color: #{$bg1};
+    padding: 0 1px;
     border-radius: 4px;
     margin: 5px 2px 5px 2px;
 }
 
 .wk-active {
     border-color: #{$cyan};
+    background-color: #{$bg1};
     color: #{$cyan};
 }
 
 .wk-active-window {
-    color: #{$border};
+    color: #{$border2};
+    background-color: #{$bg1};
 }
 
 .btn-box {
@@ -101,7 +105,7 @@ window.Bar {
     background-color: #{$bg1};
     padding: 10px;
     border: 1px solid #{$border};
-    margin: 3px;
+    margin: 8px;
     border-radius: 5px;
 }
 
@@ -125,12 +129,13 @@ window.Bar {
     background-color: #000;
 }
 
+
 box.MediaPlayer {
-    padding: .6rem;
     background-color: $bg1;
     margin: 5px;
-    border: 1px solid #{$dark_purple};
-    border-radius: 3px;
+    /*border: 1px solid $border2;*/
+    padding: 4px;
+    border-radius: 6px;
 
     box.cover-art {
         min-width: 120px;
@@ -151,6 +156,7 @@ box.MediaPlayer {
     scale {
         padding: 0;
         margin: .4rem 0;
+        min-width: 100px;
 
         trough {
             min-height: 8px;
@@ -175,4 +181,105 @@ box.MediaPlayer {
             margin: 0 .2rem;
         }
     }
+}
+
+
+.middle-box {
+    margin: 5px;
+    padding: 5px;
+    background-color: $bg1;
+    border: 1px solid $border2;
+    border-radius: 6px;
+
+}
+
+.music-middle-box {
+  min-width: 380px;
+  min-height: 220px;
+}
+
+.circle-box {
+    min-width: 50px;
+    min-height: 50px;
+}
+.mpris-main-box {
+    background-color: $bg1;
+    border: 1px solid $border2;
+    border-radius: 6px;
+    min-height: 220px;   
+    min-width: 480px;
+}
+
+
+.middle-circle {
+    min-width: 110px;
+    min-height: 110px;
+    color: #70d468;
+}
+
+.middle-circle-CPU {
+    color: #7EB7E6;
+}
+.middle-circle-GPU {
+    color: #ed5c66;
+}
+.middle-circle-RAM {
+    color: #E9D26C;
+}
+.middle-circle-DISK {
+    color: #89BEB7;
+}
+
+.middle-btn-box {
+  min-width: 100px;
+  min-height: 100px;
+  margin: 2px;
+  border: 1px solid #333;
+  background-color: $bg1;
+}
+
+.middle-screen-btn {
+    background-color: $bg1;
+    margin: 5px;
+}
+
+.middle-sound-box {
+    min-height: 150px;
+    margin: 10px;
+}
+
+.middle-logout {
+    min-width: 20px;
+    border: 1px solid $border2;
+    border-radius: 6px;
+    background-color: $bg1;
+}
+.middle-stats {
+    background-color: $bg1;
+    border: 1px solid $border2;
+    border-radius: 6px;
+}
+.middle-music {
+    background-color: $bg1;
+    border: 1px solid $border2;
+    border-radius: 6px;
+    min-height: 200px;
+}
+.middle-time {
+    background-color: $bg1;
+    border: 1px solid $border2;
+    border-radius: 6px;
+    min-height: 200px;
+    min-width: 540px;
+}
+.middle-screenshot, .middle-sound {
+    background-color: $bg1;
+    border: 1px solid $border2;
+    min-width: 100px;
+    border-radius: 6px;
+}
+.middle-bottom {
+    background-color: $bg1;
+    border: 1px solid $border2;
+    border-radius: 6px;
 }

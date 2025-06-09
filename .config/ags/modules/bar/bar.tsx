@@ -5,7 +5,7 @@ import { center_side } from "./center"
 import { right_side } from "./right"
 
 
-export default function Bar(gdkmonitor: number) {
+export default function Bar(gdkmonitor: Gdk.Monitor) {
     return <window
         name={`Bar-${gdkmonitor}`}
         visible={false}

@@ -10,15 +10,15 @@ return {
 
         vim.api.nvim_set_hl(0, "MyBorderHighlight", { fg = "#aea7d6", bg = "NONE" })
         require('noice').setup({
-         notify = {
-              enabled = false,
-              view = "notify",
+            notify = {
+                enabled = false,
+                view = "notify",
             },
             messages = {
-              enabled = false,
+                enabled = false,
             },
             presets = {
-              long_message_to_split = true,
+                long_message_to_split = true,
             },
             cmdline = {
                 enabled = true,
@@ -28,14 +28,7 @@ return {
             views = {
                 cmdline_popup = {
                     win_options = {
-                        winhighlight = {
-                            Normal = "Keyword",
-                            FloatTitle = "Keyword",
-                            FloatBorder = "Keyword",
-                            IncSearch = "Keyword",
-                            CurSearch = "Keyword",
-                            Search = "Keyword"
-                        }
+                        winhighlight = { NormalFloat = "NormalFloat", FloatBorder = "FloatBorder" },
                     },
                     position = {
                         row = 1,
@@ -46,8 +39,8 @@ return {
                         height = 1,
                     },
                     border = {
-                        style = "rounded",
-                        padding = { 1, 2 },
+                        style = "none",
+                        padding = { 2, 3 },
                     },
                 },
             },

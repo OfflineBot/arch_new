@@ -1,9 +1,9 @@
-import { App, Astal, Gtk, Gdk } from "astal/gtk3"
+import { App, Astal } from "astal/gtk3"
 import { exec, Variable } from "astal"
 import { time, date } from "../bar/right";
 
 
-const cpu = Variable("").poll(1000, () => {
+export const cpu = Variable("").poll(1000, () => {
     try {
         const out = exec(["bash", "-c", "top -bn1 | grep 'Cpu(s)' | awk '{print $2 + $4}'"]);
         return out+"%";
@@ -61,14 +61,13 @@ const data_box = (name: string, value: Variable<string>) => {
 }
 
 
-export default function Stats(gdkmonitor: number) {
+export default function Stats() {
     return <window
-        name={`stats-${gdkmonitor}`}
+        name={`stats`}
         visible={false}
         className="Stats"
         exclusivity={Astal.Exclusivity.EXCUSIVE}
         keymode={Astal.Keymode.NONE}
-        monitor={gdkmonitor}
         anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.RIGHT}
         //layer={Astal.Layer.BACKGROUND}
         application={App}>

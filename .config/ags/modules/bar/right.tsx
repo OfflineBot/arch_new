@@ -1,6 +1,5 @@
-import { App, Astal, Gtk, Gdk } from "astal/gtk3"
+import { Gtk } from "astal/gtk3"
 import { Variable } from "astal"
-import { battery } from "../stats/stats"
 
 export const time = Variable("").poll(1000, () => {
     const rawTime = new Date().toLocaleTimeString([], { hour12: false }); 

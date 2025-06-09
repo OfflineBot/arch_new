@@ -1,22 +1,22 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": "arch_small",
+    "logo": "~/.config/fastfetch/ghost.txt",
     "modules": [
 
         {
             "type": "title",
             "color": {
-                "user": "34",
-                "at": "37",
-                "host": "34"
+                "user": "blue",
+                "at": "white",
+                "host": "blue"
             }
         },
 
-        //"separator",
+        "separator",
 
         {
             "type": "os",
-            "keyColor": "35"
+            "keyColor": "magenta"
         },
         /*
         {
@@ -25,7 +25,7 @@
         },*/
         {
             "type": "uptime",
-            "keyColor": "35"
+            "keyColor": "magenta"
         },/*
         {
             "type": "packages",
@@ -39,26 +39,26 @@
 
         {
             "type": "de",
-            "keyColor": "36"
+            "keyColor": "cyan"
         },
         {
             "type": "wm",
-            "keyColor": "36"
+            "keyColor": "cyan"
         },
 
         //"separator",
         
         {
             "type": "cpu",
-            "keyColor": "34"
+            "keyColor": "blue"
         },
         {
             "type": "gpu",
-            "keyColor": "31"
+            "keyColor": "red"
         },
         {
             "type": "memory",
-            "keyColor": "33"
+            "keyColor": "yellow"
         },
         //{
             //"type": "disk",
@@ -69,6 +69,10 @@
         //"separator",
 
         //"wmtheme",
+        {
+            "type": "colors",
+            "symbol": "circle"
+        }
         //"colors"
     ]
 }

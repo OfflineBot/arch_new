@@ -44,7 +44,7 @@ export default function Applauncher(monitor: number) {
     }
 
     return <window
-        name="applauncher"
+        name={`applauncher-${monitor}`}
         monitor={monitor}
         exclusivity={Astal.Exclusivity.IGNORE}
         visible={false}

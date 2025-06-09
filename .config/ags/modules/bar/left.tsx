@@ -1,37 +1,33 @@
-import { App, Astal, Gtk, Gdk } from "astal/gtk3"
-
+import { Gtk } from "astal/gtk3"
 import Hyprland from "gi://AstalHyprland"
 import { Variable } from "astal"
 
-const wk_speed = 100;
+const wk_speed = 10;
 
-const workspaces = Variable<{ [key: string]: string}>({}).poll(wk_speed, () => {
-    const hyprland = Hyprland.get_default()
-    const workspaces = hyprland.get_workspaces()
-    const active = hyprland.get_focused_workspace().id;
-    let window_name = hyprland.get_focused_client()?.title || null;
-    if (window_name === null) {
-        window_name = "";
+
+const workspaces = Variable<{ [key: string]: string }>({}).poll(wk_speed, () => {
+    const hyprland = Hyprland.get_default();
+    const workspaces = hyprland.get_workspaces();
+    if (workspaces.length === 0) return {};
+
+    const activeId = hyprland.get_focused_workspace().id;
+    const focusedClient = hyprland.get_focused_client();
+    const windowName = focusedClient?.title ?? "";
+
+    const wkStatus: { [key: string]: string } = {};
+
+    for (const wk of workspaces) {
+        wkStatus[wk.name] = (wk.id === activeId) ? "active" : "passive";
     }
 
-    let wk_status: { [key: string]: string } = {};
-
-    workspaces.forEach((wk) => {
-        if (wk.id === active) {
-            wk_status[wk.name] = "active"
-        } else {
-            wk_status[wk.name] = "passive"
-        }
-    })
-
-    const sortedEntries = Object.entries(wk_status).sort(([nameA], [nameB]) => nameA.localeCompare(nameB));
-    const sortedWkStatus = Object.fromEntries(sortedEntries);
-    if (window_name != "") {
-        sortedWkStatus[window_name] = "active-window";
+    if (windowName) {
+        wkStatus[windowName] = "active-window";
     }
 
-    return sortedWkStatus
-})
+    return Object.fromEntries(
+        Object.entries(wkStatus).sort(([a], [b]) => a.localeCompare(b))
+    );
+});
 
 function left_side() {
     return <box halign={Gtk.Align.START} className="bar-workspace bar-item">
