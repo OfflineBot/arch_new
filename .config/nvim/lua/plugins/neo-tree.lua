@@ -14,6 +14,9 @@ return {
                     hide_dotfiles = false,
                 },
             },
+            filters = {
+                custom = { "node_modules" }
+            }
         })
 		vim.keymap.set("n", "<C-n>", "<Cmd>Neotree filesystem toggle right<CR>", {})
 		vim.keymap.set("n", "<leader>bf", "<Cmd>Neotree buffers reveal float<CR>", {})

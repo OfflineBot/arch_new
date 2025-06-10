@@ -6,7 +6,7 @@ WINIT_X11_SCALE_FACTOR = "1"
 dynamic_padding = true
 decorations = "full"
 title = "Alacritty@CachyOS"
-opacity = 0.95
+opacity = 1.0
 decorations_theme_variant = "Dark"
 
 [window.dimensions]
@@ -19,72 +19,58 @@ general = "Alacritty"
 
 [window.padding]
 x = 4
-y = 0
+y = 4
 
 [scrolling]
 history = 10000
 multiplier = 3
 
+
 [colors]
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "0x0a0a0a"
-foreground = "0xD8DEE9"
+background = "0x0a0c0f"
+foreground = "0xDFE0EA"
 
 [colors.normal]
-black = "0x3B4252"
-#red = "0xfe4c4c"
-#green = "0x65ff91"
-#yellow = "0xffc965"
-#blue = "0x7fa7ff"
-#magenta = "0xaea7d6"
-#cyan = "0x7fe7ff"
-#white = "0xe6e7e9"
-#black = "0x15161E"
-red = "0xf7768e"
-green = "0x9ece6a"
-yellow = "0xe0af68"
-blue = "0x7aa2f7"
-magenta = "0xbb9af7"
-cyan = "0x7dcfff"
-white = "0xa9b1d6"
+black   = "0x272932"
+red     = "0xed5c66"
+green   = "0x70d468"
+yellow  = "0xE9D26C"
+blue    = "0x7EB7E6"
+magenta = "0xa867f5"
+cyan    = "0x89BEB7"
+white   = "0xCFD0D7"
 
 [colors.bright]
-black = "0x3B4252"
-#red = "0xfe4c4c"
-#green = "0x65ff91"
-#yellow = "0xffc965"
-#blue = "0x7fa7ff"
-#magenta = "0xaea7d6"
-#cyan = "0x7fe7ff"
-#white = "0xe6e7e9"
-#black = "0x15161E"
-red = "0xf7768e"
-green = "0x9ece6a"
-yellow = "0xe0af68"
-blue = "0x7aa2f7"
-magenta = "0xbb9af7"
-cyan = "0x7dcfff"
-white = "0xa9b1d6"
+black   = "0x16181D"
+red     = "0xed5c66"
+green   = "0x70d468"
+yellow  = "0xE9D26C"
+blue    = "0x7EB7E6"
+magenta = "0xa867f5"
+cyan    = "0x89BEB7"
+white   = "0xCFD0D7"
+
 
 [font]
 size = 11
 
 [font.normal]
-family = "monospace"
+family = "FiraCode Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "monospace"
+family = "FiraCode Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "monospace"
+family = "FiraCode Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "monospace"
+family = "FiraCode Nerd Font"
 style = "Bold Italic"
 
 [selection]

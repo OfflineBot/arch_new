@@ -22,7 +22,8 @@ return {
                 virtual_text = true,
                 signs = true,
                 underline = true,
-                serverity_sort = true,
+                severity_sort = true,
+                update_in_insert = false,
             })
 
             vim.keymap.set("n", "K", function()
@@ -35,6 +36,9 @@ return {
             --  capabilities = capabilities
             --})
             lspconfig.ts_ls.setup({
+                flags = {
+                    debounce_text_changes = 500,
+                },
                 capabilities = capabilities
             })
             lspconfig.solargraph.setup({
@@ -68,3 +72,4 @@ lspconfig["mojo"].setup({
         end,
     },
 }
+
