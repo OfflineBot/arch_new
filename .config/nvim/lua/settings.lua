@@ -2,12 +2,12 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "markdown",
-  callback = function()
-    vim.opt_local.conceallevel = 2
-  end,
-})
+--vim.api.nvim_create_autocmd("FileType", {
+--  pattern = "markdown",
+--  callback = function()
+--    vim.opt_local.conceallevel = 2
+--  end,
+--})
 
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
@@ -31,6 +31,7 @@ vim.cmd("set clipboard=unnamedplus")
 vim.opt.swapfile = false
 
 
+
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
@@ -46,3 +47,6 @@ vim.wo.relativenumber = true
 
 -- Make terminal mode functional
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
+
+
+--vim.g.loaded_matchparen = 1

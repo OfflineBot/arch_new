@@ -6,3 +6,4 @@ return {
     vim.keymap.set("n", "-", oil.toggle_float, {})
   end,
 }
+

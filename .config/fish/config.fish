@@ -10,6 +10,9 @@ set -Ux TERMINAL alacritty
 set -x GOPROXY direct
 set -Ux fish_user_paths $HOME/.nix-profile/bin $fish_user_paths
 set -ga fish_user_paths /home/offlinebot/.nimble/bin
+set -x YDOTOOL_SOCKET $HOME/.ydotool_socket
+set -x XCOMPOSEFILE $HOME/.XCompose
+
 
 function cff
     clear

@@ -72,4 +72,3 @@ lspconfig["mojo"].setup({
         end,
     },
 }
-

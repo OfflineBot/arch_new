@@ -22,3 +22,4 @@ return {
 		vim.keymap.set("n", "<leader>bf", "<Cmd>Neotree buffers reveal float<CR>", {})
 	end,
 }
+

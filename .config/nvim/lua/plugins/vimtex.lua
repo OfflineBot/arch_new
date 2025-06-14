@@ -13,7 +13,8 @@ return {
         vim.g.vimtex_xdotool_sync = 1
         vim.g.vimtex_quickfix_mode = 0
         vim.g.vimtex_complete_enabled = 1
-        vim.g.vimtex_fold_enabled=1
+        vim.g.vimtex_fold_enabled=0
+        vim.g.vimtex_fold_levelstart = 99
         vim.g.vimtex_syntax_nospell_comments = 1
         vim.g.vimtex_compiler_latexmk = { options = {'-xelatex', '-pdf', '-interaction=nonstopmode', '-synctex=1'}}
     end

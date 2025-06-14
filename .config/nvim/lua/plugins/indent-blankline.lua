@@ -1,4 +1,4 @@
-local x = {
+return {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
     --@module "ibl"
@@ -9,4 +9,3 @@ local x = {
     end
 }
 
-return {}
