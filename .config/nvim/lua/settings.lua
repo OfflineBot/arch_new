@@ -28,6 +28,8 @@ vim.cmd("set showmode")
 
 vim.cmd("set clipboard=unnamedplus")
 
+vim.cmd([[autocmd FileType * set formatoptions-=ro]])
+
 vim.opt.swapfile = false
 
 
@@ -50,3 +52,12 @@ vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
 
 
 --vim.g.loaded_matchparen = 1
+
+
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "tex",
+  callback = function()
+    vim.bo.indentexpr = ""
+  end,
+})
