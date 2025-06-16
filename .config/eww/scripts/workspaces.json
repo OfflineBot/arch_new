@@ -1,0 +1,20 @@
+{
+  "workspaces": [
+    {
+      "id": "1",
+      "name": "1",
+      "focused": false
+    },
+    {
+      "id": "2",
+      "name": "2",
+      "focused": true
+    },
+    {
+      "id": "3",
+      "name": "3",
+      "focused": false
+    }
+  ],
+  "active_window": "~/.config/eww/scripts: ./init.sh - ./init.sh"
+}

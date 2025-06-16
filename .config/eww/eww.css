@@ -1,0 +1,105 @@
+
+* {
+    box-shadow: none;
+}
+
+.topbar0, .topbar1, .topbar2 {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.topbar-content{
+    margin: 8px;
+    margin-bottom: 0;
+    /*background-color: rgba(0,0,0,0);*/
+    background-color: #0a0c0f;
+    border: 1px solid #444;
+    border-radius: 8px;
+}
+
+.bar-item {
+    /*border: 1px solid #444;*/
+    padding: 2px 4px;
+    background-color: #0a0c0f;
+    border-radius: 6px;
+}
+
+.bar-stat-item {
+    margin: 2px 4px;
+    padding: 0;
+}
+
+.bar-stat-date {
+    margin-left: 20px;
+}
+.bar-stat-time {
+    margin-right: 20px;
+}
+.bar-stat-ram {
+    min-width: 70px;
+    color: #E9D26C;
+}
+.bar-stat-cpu {
+    min-width: 70px;
+    color: #89BEB7;
+}
+.bar-stat-gpu {
+    min-width: 70px;
+    color: #7EB7E6;
+}
+.bar-stat-off {
+    color: #ed5c66;
+    min-width: 30px;
+    background-color: #0a0c0f;
+    border: none;
+    outline: none;
+}
+
+.bar-label {
+    margin: 0;
+    padding: 4px 10px;
+    background-color: #0a0c0f;
+    margin: 4px 2px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.wk {
+    background-color: #0a0c0f;
+    padding: 0;
+    margin: 6px 2px;
+    min-width: 20px;
+    border: 1px solid #444;
+    border-radius: 6px;
+} 
+.wk-focus {
+    border: 1px solid #999;
+}
+
+.wk:hover {
+    color: white;
+}
+
+.logout {
+    background-color: rgba(0,0,0,0);
+}
+
+.logout-item {
+    font-size: 190px;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #0a0c0f;
+    border: 1px solid #444;
+}
+
+.logout-item:hover {
+    color: white;
+    background-color: #0a0c0f;
+    border-radius: 90px;
+}
+
+.logout-text {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

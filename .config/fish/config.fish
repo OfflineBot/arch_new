@@ -6,6 +6,9 @@
 #    # smth smth
 #end
 
+alias vi="vim"
+alias vim="nvim"
+
 set -Ux TERMINAL alacritty
 set -x GOPROXY direct
 set -Ux fish_user_paths $HOME/.nix-profile/bin $fish_user_paths
