@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#window_name=$(hyprctl activewindow -j | jq -r '.monitor // "0"')
-#target_window="topbar${window_name}"
-#
-#eww open --toggle "$target_window"
-#
-
 
 read cursor_x cursor_y < <(hyprctl cursorpos -j | jq -r '"\(.x) \(.y)"')
 
